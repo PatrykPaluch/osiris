@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <packaging>pom</packaging>
+
+  <groupId>com.paluchp.apps.osiris</groupId>
+  <artifactId>osiris</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Osiris</name>
+  <description>Osiris root module</description>
+
+  <modules>
+    <module>osiris-parent</module>
+    <module>osiris-spring-parent</module>
+    <module>osiris-plant-server</module>
+    <module>osiris-grow-server</module>
+    <module>osiris-server-contract</module>
+    <!-- <module>osiris-monitor</module>-->
+  </modules>
+</project>
