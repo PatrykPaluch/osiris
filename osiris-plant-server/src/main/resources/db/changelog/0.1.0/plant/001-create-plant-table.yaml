@@ -1,0 +1,27 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0.1.0-001-create-plant-table
+      author: osiris
+      changes:
+        - createTable:
+            tableName: plant
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: description
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: image
+                  type: uuid

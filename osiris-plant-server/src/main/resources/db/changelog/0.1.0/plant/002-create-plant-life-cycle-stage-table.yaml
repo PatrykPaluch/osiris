@@ -1,0 +1,64 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0.1.0-001-create-plant-life-cycle-stage-table
+      author: osiris
+      changes:
+        - createTable:
+            tableName: plant_life_cycle_stage
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: stage
+                  type: varchar(12)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: plant_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+              - column:
+                  name: description
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: ground_moisture_min
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: ground_moisture_max
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: air_moisture_min
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: air_moisture_max
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: temperature_min
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: temperature_max
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: watering_frequency
+                  type: varchar(20)
+                  constraints:
+                    nullable: false

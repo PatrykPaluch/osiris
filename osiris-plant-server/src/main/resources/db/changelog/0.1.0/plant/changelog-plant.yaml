@@ -1,0 +1,10 @@
+databaseChangeLog:
+  - include:
+      relativeToChangelogFile: true
+      file: 001-create-plant-table.yaml
+  - include:
+      relativeToChangelogFile: true
+      file: 002-create-plant-life-cycle-stage-table.yaml
+  - include:
+      relativeToChangelogFile: true
+      file: 003-create-plant-constraints.yaml

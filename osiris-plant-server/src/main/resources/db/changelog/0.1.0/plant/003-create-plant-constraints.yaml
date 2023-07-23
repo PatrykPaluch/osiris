@@ -1,0 +1,19 @@
+databaseChangeLog:
+  - changeSet:
+      id: 0.1.0-003-create-plant-constraints_01
+      author: osiris
+      changes:
+        - addForeignKeyConstraint:
+            baseTableName: plant_life_cycle_stage
+            baseColumnNames: plant_id
+            constraintName: fk_plant_life_cycle_stage_plant_id
+            referencedTableName: plant
+            referencedColumnNames: id
+            onDelete: CASCADE
+  - changeSet:
+      id: 0.1.0-004-create-plant-constraints_02
+      author: osiris
+      changes:
+        - addUniqueConstraint:
+            tableName: plant_life_cycle_stage
+            columnNames: plant_id, stage
